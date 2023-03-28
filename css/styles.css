@@ -103,8 +103,7 @@ body nav .nav-div .nav-ul form .search1 {
   height: 100%;
   max-width: 185px;
   min-height: 44px;
-  background-color: #E7E7E7;
-  opacity: 40%;
+  background-color: #1E1B33;
   border-radius: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -113,10 +112,19 @@ body nav .nav-div .nav-ul form .search1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #E7E7E7;
+  border-radius: 8px;
 }
 body nav .nav-div .nav-ul form .search1__item1 {
   padding-left: 16px;
   height: 100%;
+  max-width: 149px;
+  border: none;
+  background-color: #1E1B33;
+  opacity: 40%;
 }
 body nav .nav-div .nav-ul form .submit {
   width: 100%;
@@ -131,4 +139,13 @@ body nav .burger-menu {
   width: 44px;
   height: 44px;
   opacity: 0%;
+}
+body section {
+  width: 1440px;
+  height: 1000px;
+  background: rgba(215, 29, 97, 0.6);
+  -webkit-filter: blur(200px);
+          filter: blur(200px);
+  background-size: 450px 400px;
+  background-repeat: no-repeat;
 }

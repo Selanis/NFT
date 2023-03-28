@@ -68,16 +68,25 @@ body {
                         height: 100%;
                         max-width: 185px;
                         min-height: 44px;
-                        background-color: #E7E7E7;
-                        opacity: 40%;
+                        background-color: #1E1B33;
                         border-radius: 8px;
                         display: flex;
                         flex-direction: row;
+                        align-items: center;
+                        border: 1px solid #E7E7E7;
+                        border-radius: 8px;
+
 
                         &__item1 {
                             padding-left: 16px;
                             height: 100%;
+                            max-width: 149px;
+                            border: none;
+                            background-color: #1E1B33;
+                            opacity: 40%;
                         }
+
+
                     }
 
                     .submit {
@@ -100,4 +109,12 @@ body {
         }
     }
 
+    section {
+        width: 1440px;
+        height: 1000px;
+        background: rgba(215, 29, 97, 0.6);
+        filter: blur(200px);
+        background-size: 450px 400px;
+        background-repeat: no-repeat;
+    }
 }
