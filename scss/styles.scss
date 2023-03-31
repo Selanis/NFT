@@ -190,11 +190,54 @@ body {
         }
 
         .main-pict-content {
+            display: flex;
+            flex-direction: row;
             width: 100%;
-            height: 100%;
             max-width: 466px;
-            min-height: 618px;
-            background: url('../photo/main-list.png') center/cover no-repeat;
+
+            
+
+            // div {
+            //     opacity: 1;
+            //     transition: opacity 1s;
+            //     width: 100%;
+            // }
+
+            // div {
+            //     .shown {
+            //         opacity: 1;
+            //         width: 100%;
+            //     }  
+            // }
+
+            &__item1 {
+                width: 100%;
+                height: 100%;
+                max-width: 466px;
+                min-height: 618px;
+                background: url('../photo/main-list.png') center/cover no-repeat;
+            }
+            &__item2 {
+                width: 100%;
+                height: 100%;
+                max-width: 466px;
+                min-height: 618px;
+                background: url('../photo/main-list2.png') center/cover no-repeat;
+            }
+            &__item3 {
+                width: 100%;
+                height: 100%;
+                max-width: 466px;
+                min-height: 618px;
+                background: url('../photo/main-list3.png') center/cover no-repeat;
+            }
+            &__item4 {
+                width: 100%;
+                height: 100%;
+                max-width: 466px;
+                min-height: 618px;
+                background: url('../photo/main-list4.png') center/cover no-repeat;
+            }
         }
     }
 
@@ -223,9 +266,13 @@ body {
 
     .button-right {
         position: absolute;
-        left: 1341px;
-        top: 358px;
+        left: 1370px;
+        top: 378px;
         z-index: 1001;
+        width: 100px;
+        height: 100px;
+        background: url('../photo/rigth-button.svg') center;
+        border: none;
     }
 
     .after-main-content {
@@ -344,15 +391,167 @@ body {
             flex-direction: row;
             justify-content: space-between;
             margin-top: 60px;
-            margin-bottom: 132px;
 
-            div {
+            &__item1 {
                 width: 100%;
                 height: 100%;
                 max-width: 312px;
                 min-height: 435px;
                 background: #1E1B33;
                 border-radius: 12px;
+
+                .science {
+                    padding: 24px;
+                    width: 100%;
+                    height: 100%;
+                    max-width: 264px;
+                    min-height: 387px;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+
+                    &__photo1 {
+                        width: 100%;
+                        height: 100%;
+                        min-height: 232px;
+                        background: url('../photo/science-jobs1.png') center/cover, no-repeat;
+                    }
+                    &__photo2 {
+                        width: 100%;
+                        height: 100%;
+                        min-height: 232px;
+                        background: url('../photo/science-jobs2.png') center/cover, no-repeat;
+                    }
+                    &__photo3 {
+                        width: 100%;
+                        height: 100%;
+                        min-height: 232px;
+                        background: url('../photo/science-jobs3.png') center/cover, no-repeat;
+                    }
+                    &__photo4 {
+                        width: 100%;
+                        height: 100%;
+                        min-height: 232px;
+                        background: url('../photo/science-jobs4.png') center/cover, no-repeat;
+                    }
+
+                    &__title {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        margin-top: 24px;
+
+                        h3 {
+                            font-size: 24px;
+                            font-weight: 500;
+                        }
+
+                        .science-likes {
+                            display: flex;
+                            flex-direction: row;
+                            width: 100%;
+                            max-width: 34px;
+                            height: 18px;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            p {
+                                font-size: 14px;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+
+                    &__people {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-top: 20px;
+
+                        .people-1 {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            align-items: center;
+                            width: 100%;
+                            max-width: 116px;
+
+                            p {
+                                font-size: 14px;
+                                font-weight: 500;
+                            }
+                        }
+
+                        .people-2 {
+                            display: flex;
+                            flex-direction: row;
+                            max-width: 60px;
+                            margin-left: 4px;
+                            
+                            img {
+                                margin-left: -4px;
+                            }
+                        }
+                    }
+
+                    button {
+                        width: 100%;
+                        height: 100%;
+                        min-height: 38px;
+                        margin-top: 24px;
+                        background: #1E1B33;
+                        border: 1px solid rgba(231, 231, 231, 0.4);
+                        border-radius: 8px;
+                    }
+
+                    button:active {
+                        background: linear-gradient(89.62deg, #0500FA 7.09%, #E01E5A 92.23%);
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .collections {
+        margin-top: 132px;
+        margin-bottom: 150px;
+        border: 1px solid white;
+        width: 100%;
+        height: 100%;
+        max-width: 1320px;
+        min-height: 599px;
+
+        &__title {
+            width: 100%;
+            height: 100%;
+            max-width: 1319px;
+            min-height: 87px;
+
+            .nft-collections-title {
+                width: 100%;
+                height: 100%;
+                max-width: 319px;
+                min-height: 87px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+
+                h1 {
+                    background: linear-gradient(89.62deg, #06045B 7.09%, #E01E5A 92.23%);
+                    background-clip: text;
+                    color: transparent;
+                    font-size: 96px;
+                    font-weight: 700;
+                }
+
+                h2 {
+                    font-weight: 500;
+                    font-size: 44px;
+                    margin-top: -69px;
+                }
             }
         }
     }
