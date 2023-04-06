@@ -17,8 +17,28 @@ buttonSlider.onclick = function() {
     Slider[counter].className = "item1";
 };
 
-// Выплывающий список
+// Выпадающий список
 var buttonShow = document.querySelector('.see-all');
-console.log(buttonShow);
+var secondPage = document.querySelectorAll(".second-sort-page .grid-sec");
 
+console.log(secondPage);
 
+buttonShow.onclick = function() {
+    if (buttonShow.classList.length == 1) {
+        buttonShow.classList.add("see-all-shown");
+        buttonShow.innerHTML = "Hide All Collections";
+        for (i = 3; i < 9; i++) {
+            secondPage[i].classList.remove("grid-hidden");
+        }
+    } else {
+        buttonShow.classList.remove("see-all-shown");
+        buttonShow.innerHTML = "See All Collections"
+        for (i = 3; i < 9; i++) {
+            secondPage[i].classList.add("grid-hidden");
+        }
+    };
+}
+
+// Окно всплывающее
+var Searchbutton = document.querySelector(".search .submit");
+Searchbutton.onclick = alert("Принято");

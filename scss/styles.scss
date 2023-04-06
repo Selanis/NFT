@@ -645,17 +645,27 @@ body {
             height: 100%;
             min-height: 101px;
             margin-top: 60px;
+            position: relative;
+            z-index: 1;
 
             .second-sort-page {
                 display: grid;
                 gap: 24px;
                 grid-template-columns: repeat(3, minmax(10px, 424px));
                 grid-template-rows: repeat(1, minmax(0px, 101px));
+
+                .grid-hidden {
+                    height: 0%;
+                    opacity: 0 !important;
+                    transition: opacity 0.5s !important;
+                }
                 
                 .grid-sec {
                     background: #1E1B33;
                     border: 1px solid rgba(231, 231, 231, 0.4);
                     border-radius: 16px;
+                    transition: opacity 1s;
+                    opacity: 1;
 
                     .grid-sect {
                         margin-top: 20px;
@@ -707,6 +717,8 @@ body {
         }
 
         .see-all {
+            position: relative;
+            z-index: 100000;
             padding-left: 20px;
             padding-top: 12px;
             padding-bottom: 12px;
@@ -715,12 +727,15 @@ body {
             font-size: 14px;
             background: #1E1B33;
             border: 1px solid rgba(231, 231, 231, 0.4);
-            margin-top: 62px;
+            margin-top: -194px;
+            transition: margin 1s;
         }
 
         .see-all-shown {
             border: none;
             background: linear-gradient(89.62deg, #0500FA 7.09%, #E01E5A 92.23%);
+            margin-top: 56px !important;
+            transition: margin 1s;
         }
     }
 
@@ -765,8 +780,41 @@ body {
         height: 100%;
         max-width: 1320px;
         min-height: 78px;
-        border: 1px solid white;
         margin-top: 132px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__logo1 {
+            width: 100px;
+            height: 69px;
+            background: url('../photo/last-logo1.svg');
+            background-size: 100px 69px;
+        }
+        &__logo2 {
+            width: 208px;
+            height: 60px;
+            background: url('../photo/last-logo2.svg');
+            background-size: 208px 60px;
+        }
+        &__logo3 {
+            width: 200px;
+            height: 78px;
+            background: url('../photo/last-logo3.svg');
+            background-size: 200px 78px;
+        }
+        &__logo4 {
+            width: 200px;
+            height: 78px;
+            background: url('../photo/last-logo4.svg');
+            background-size: 200px 78px;
+        }
+        &__logo5 {
+            width: 174px;
+            height: 59px;
+            background: url('../photo/last-logo5.svg');
+            background-size: 174px 59px;
+        }
     }
 
     footer {
