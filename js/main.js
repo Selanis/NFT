@@ -92,6 +92,8 @@ button30DAYS.onclick = function() {
     } else { };
 }
 
-// Окно всплывающее
-// var Searchbutton = document.querySelector(".search .submit");
-// Searchbutton.onclick = alert("Принято");
+// Модальное окно
+var buttonModalWindow = document.getElementById("modal-window");
+buttonModalWindow.onclick = function() {
+    buttonModalWindow.onclick = confirm("Are you sure?");
+}
