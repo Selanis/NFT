@@ -609,6 +609,8 @@ body .collections {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
+  z-index: 1000;
 }
 body .collections__title {
   width: 100%;
