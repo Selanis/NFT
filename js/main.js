@@ -97,3 +97,114 @@ var buttonModalWindow = document.getElementById("modal-window");
 buttonModalWindow.onclick = function() {
     buttonModalWindow = confirm("Are you sure?");
 }
+
+// Сортировка
+var buttonPopular = document.querySelectorAll(".popular .popular-buttons button");
+
+var buttonAll = document.getElementById("all");
+var buttonArt = document.getElementById("art");
+var buttonGames = document.getElementById("games");
+var buttonSports = document.getElementById("sports");
+var buttonTrand = document.getElementById("tranding");
+
+var sortList2 = [document.getElementById("img1"), document.getElementById("img2"), document.getElementById("img3"), document.getElementById("img4")];
+
+buttonAll.onclick = function() {
+    if (buttonAll.classList.length !== 1) {
+        for (i = 0; i < 5; i++) {
+            if (buttonPopular[i].classList.length == 1) {
+                buttonPopular[i].classList.remove("active");
+                break;
+            };
+        };
+        buttonAll.classList.add("active");
+
+        for (i = 0; i < 5; i++) {
+            sortList2[i].classList.remove(sortList2[i].classList[1]);
+            sortList2[i].classList.add("first1-" + String(i + 1));
+        };
+
+        
+    } else {};
+};
+
+buttonArt.onclick = function() {
+    if (buttonArt.classList.length !== 1) {
+        for (i = 0; i < 5; i++) {
+            if (buttonPopular[i].classList.length == 1) {
+                buttonPopular[i].classList.remove("active");
+                break;
+            };
+        };
+        buttonArt.classList.add("active");
+
+        for (i = 0; i < 5; i++) {
+            sortList2[i].classList.remove(sortList2[i].classList[1]);
+            sortList2[i].classList.add("first2-" + String(i + 1));
+        };
+
+        
+    } else {};
+};
+
+buttonGames.onclick = function() {
+    if (buttonGames.classList.length !== 1) {
+        for (i = 0; i < 5; i++) {
+            if (buttonPopular[i].classList.length == 1) {
+                buttonPopular[i].classList.remove("active");
+                break;
+            };
+        };
+        buttonGames.classList.add("active");
+
+        for (i = 0; i < 5; i++) {
+            sortList2[i].classList.remove(sortList2[i].classList[1]);
+            sortList2[i].classList.add("first3-" + String(i + 1));
+        };
+
+        
+    } else {};
+};
+
+buttonSports.onclick = function() {
+    if (buttonSports.classList.length !== 1) {
+        for (i = 0; i < 5; i++) {
+            if (buttonPopular[i].classList.length == 1) {
+                buttonPopular[i].classList.remove("active");
+                break;
+            };
+        };
+        buttonSports.classList.add("active");
+
+        for (i = 0; i < 5; i++) {
+            sortList2[i].classList.remove(sortList2[i].classList[1]);
+            sortList2[i].classList.add("first4-" + String(i + 1));
+        };
+
+        
+    } else {};
+};
+
+buttonTrand.onclick = function() {
+    if (buttonTrand.classList.length !== 1) {
+        for (i = 0; i < 5; i++) {
+            if (buttonPopular[i].classList.length == 1) {
+                buttonPopular[i].classList.remove("active");
+                break;
+            };
+        };
+
+        buttonTrand.classList.add("active");
+
+        for (i = 0; i < 5; i++) {
+            sortList2[i].classList.remove(sortList2[i].classList[1]);
+            sortList2[i].classList.add("first5-" + String(i + 1));
+        };
+    } else {};
+};
+
+
+
+
+
+

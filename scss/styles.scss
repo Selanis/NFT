@@ -333,7 +333,7 @@ body {
         }
     }
 
-    hr {
+    .hr1 {
         width: 100%;
         max-width: 1320px;
         margin-top: 80px;
@@ -942,8 +942,213 @@ body {
         height: 100%;
         max-width: 1320px;
         min-height: 597px;
-        border: 1px solid white;
         margin-top: 132px;
+        display: flex;
+        flex-direction: column;
+
+        &__title {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            .popular-h1 {
+                max-width: 412px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h1 {
+                    max-width: 216px;
+                    font-weight: 700;
+                    font-size: 96px;
+                    background: linear-gradient(89.62deg, #0500FA 7.09%, #E01E5A 92.23%);
+                    background-clip: text;
+                    color: transparent;
+                }
+        
+                h2 {
+                    font-weight: 500;
+                    font-size: 44px;
+                    margin-top: -69px;
+                }
+            }
+
+            .popular-buttons {
+                button {
+                    font-size: 14px;
+                    padding-top: 12px;
+                    padding-bottom: 12px;
+                    padding-right: 20px;
+                    padding-left: 20px;
+                    line-height: 14px;
+                    background: #09090A;
+                    border: none;
+                    border-radius: 8px;
+                }
+
+                .active {
+                    background: linear-gradient(89.62deg, #0500FA 7.09%, #E01E5A 92.23%);
+                }
+                
+            }
+            
+        }
+
+        &__grid {
+            width: 100%;
+            max-width: 1320px;
+            display: grid;
+            grid-template-columns: repeat(4, minmax(10px, 312px));
+            grid-template-rows: 453px;
+            gap: 24px;
+            margin-top: 60px;
+
+            .popular-grid:hover {
+                border: 1px solid pink;
+                box-shadow: 0px 20px 50px rgba(223, 30, 91, 0.1);
+            }
+
+            .popular-grid {
+                background: #1E1B33;
+                border-radius: 12px;
+                padding: 24px;
+                display: flex;
+                flex-direction: column;
+
+                &__img {
+                    width: 100%;
+                    max-width: 264px;
+                    min-height: 232px;
+                }
+
+                h1 {
+                    font-size: 24px;
+                    font-weight: 500;
+                    margin-top: 20px;
+                }
+
+                &__like {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width: 100%;
+                    margin-top: 19px;
+
+                    p {
+                        color: rgba(3, 219, 128, 0.8);
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 16px;
+
+                        span {
+                            color: rgba(3, 219, 128, 0.4);;
+                            font-weight: 400;
+                        }
+                    }
+
+                    h3 {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        font-size: 14px;
+                        font-weight: 500;
+
+                        img {
+                            margin-right: 4px;
+                        }
+                    }
+                    
+                }
+
+                .hr2 {
+                    border: 1px solid rgba(231, 231, 231, 0.24);
+                    width: 100%;
+                    max-width: 264px;
+                    height: 0px;
+                    margin-top: 27px;
+                }
+
+                &__button {
+                    width: 100%;
+                    max-width: 105px;
+                    min-height: 38px;
+                    margin-top: 24px;
+                    background: #1E1B33;
+                    border: 0.5px solid rgba(231, 231, 231, 0.4);
+                    border-radius: 8px;
+                }
+
+                &__button:active {
+                    background: linear-gradient(89.62deg, #0500FA 7.09%, #E01E5A 92.23%);;
+                }
+
+                .first1-1 {
+                    background: url("../photo/election1.png") center/cover no-repeat;
+                }
+                .first1-2 {
+                    background: url("../photo/election2.png") center/cover no-repeat;
+                }
+                .first1-3 {
+                    background: url("../photo/election3.png") center/cover no-repeat;
+                }
+                .first1-4 {
+                    background: url("../photo/election4.png") center/cover no-repeat;
+                }
+                // Вторая вкладка
+                .first2-1 {
+                    background: url("../photo/election2-1.png") center/cover no-repeat;
+                }
+                .first2-2 {
+                    background: url("../photo/election2-2.png") center/cover no-repeat;
+                }
+                .first2-3 {
+                    background: url("../photo/election2-3.png") center/cover no-repeat;
+                }
+                .first2-4 {
+                    background: url("../photo/election2-4.png") center/cover no-repeat;
+                }
+                // Третья вкладка
+                .first3-1 {
+                    background: url("../photo/election3-1.png") center/cover no-repeat;
+                }
+                .first3-2 {
+                    background: url("../photo/election3-2.png") center/cover no-repeat;
+                }
+                .first3-3 {
+                    background: url("../photo/election3-3.png") center/cover no-repeat;
+                }
+                .first3-4 {
+                    background: url("../photo/election3-4.png") center/cover no-repeat;
+                }
+                // Четвёртая вкладка
+                .first4-1 {
+                    background: url("../photo/election4-1.png") center/cover no-repeat;
+                }
+                .first4-2 {
+                    background: url("../photo/election4-2.png") center/cover no-repeat;
+                }
+                .first4-3 {
+                    background: url("../photo/election4-3.png") center/cover no-repeat;
+                }
+                .first4-4 {
+                    background: url("../photo/election4-4.png") center/cover no-repeat;
+                }
+                // Пятая вкладка
+                .first5-1 {
+                    background: url("../photo/election5-1.png") center/cover no-repeat;
+                }
+                .first5-2 {
+                    background: url("../photo/election5-2.png") center/cover no-repeat;
+                }
+                .first5-3 {
+                    background: url("../photo/election5-3.png") center/cover no-repeat;
+                }
+                .first5-4 {
+                    background: url("../photo/election5-4.png") center/cover no-repeat;
+                }
+            }
+        }
     }
 
     .create {

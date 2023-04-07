@@ -386,7 +386,7 @@ body .after-main-content__item4 span {
           background-clip: text;
   color: transparent;
 }
-body hr {
+body .hr1 {
   width: 100%;
   max-width: 1320px;
   margin-top: 80px;
@@ -1115,8 +1115,229 @@ body .popular {
   height: 100%;
   max-width: 1320px;
   min-height: 597px;
-  border: 1px solid white;
   margin-top: 132px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+body .popular__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .popular__title .popular-h1 {
+  max-width: 412px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .popular__title .popular-h1 h1 {
+  max-width: 216px;
+  font-weight: 700;
+  font-size: 96px;
+  background: linear-gradient(89.62deg, #0500FA 7.09%, #E01E5A 92.23%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+body .popular__title .popular-h1 h2 {
+  font-weight: 500;
+  font-size: 44px;
+  margin-top: -69px;
+}
+body .popular__title .popular-buttons button {
+  font-size: 14px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 20px;
+  padding-left: 20px;
+  line-height: 14px;
+  background: #09090A;
+  border: none;
+  border-radius: 8px;
+}
+body .popular__title .popular-buttons .active {
+  background: linear-gradient(89.62deg, #0500FA 7.09%, #E01E5A 92.23%);
+}
+body .popular__grid {
+  width: 100%;
+  max-width: 1320px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(10px, 312px));
+  grid-template-rows: 453px;
+  gap: 24px;
+  margin-top: 60px;
+}
+body .popular__grid .popular-grid:hover {
+  border: 1px solid pink;
+  -webkit-box-shadow: 0px 20px 50px rgba(223, 30, 91, 0.1);
+          box-shadow: 0px 20px 50px rgba(223, 30, 91, 0.1);
+}
+body .popular__grid .popular-grid {
+  background: #1E1B33;
+  border-radius: 12px;
+  padding: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+body .popular__grid .popular-grid__img {
+  width: 100%;
+  max-width: 264px;
+  min-height: 232px;
+}
+body .popular__grid .popular-grid h1 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+body .popular__grid .popular-grid__like {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-top: 19px;
+}
+body .popular__grid .popular-grid__like p {
+  color: rgba(3, 219, 128, 0.8);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+body .popular__grid .popular-grid__like p span {
+  color: rgba(3, 219, 128, 0.4);
+  font-weight: 400;
+}
+body .popular__grid .popular-grid__like h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+body .popular__grid .popular-grid__like h3 img {
+  margin-right: 4px;
+}
+body .popular__grid .popular-grid .hr2 {
+  border: 1px solid rgba(231, 231, 231, 0.24);
+  width: 100%;
+  max-width: 264px;
+  height: 0px;
+  margin-top: 27px;
+}
+body .popular__grid .popular-grid__button {
+  width: 100%;
+  max-width: 105px;
+  min-height: 38px;
+  margin-top: 24px;
+  background: #1E1B33;
+  border: 0.5px solid rgba(231, 231, 231, 0.4);
+  border-radius: 8px;
+}
+body .popular__grid .popular-grid__button:active {
+  background: linear-gradient(89.62deg, #0500FA 7.09%, #E01E5A 92.23%);
+}
+body .popular__grid .popular-grid .first1-1 {
+  background: url("../photo/election1.png") center/cover no-repeat;
+}
+body .popular__grid .popular-grid .first1-2 {
+  background: url("../photo/election2.png") center/cover no-repeat;
+}
+body .popular__grid .popular-grid .first1-3 {
+  background: url("../photo/election3.png") center/cover no-repeat;
+}
+body .popular__grid .popular-grid .first1-4 {
+  background: url("../photo/election4.png") center/cover no-repeat;
+}
+body .popular__grid .popular-grid .first2-1 {
+  background: url("../photo/election2-1.png") center/cover no-repeat;
+}
+body .popular__grid .popular-grid .first2-2 {
+  background: url("../photo/election2-2.png") center/cover no-repeat;
+}
+body .popular__grid .popular-grid .first2-3 {
+  background: url("../photo/election2-3.png") center/cover no-repeat;
+}
+body .popular__grid .popular-grid .first2-4 {
+  background: url("../photo/election2-4.png") center/cover no-repeat;
+}
+body .popular__grid .popular-grid .first3-1 {
+  background: url("../photo/election3-1.png") center/cover no-repeat;
+}
+body .popular__grid .popular-grid .first3-2 {
+  background: url("../photo/election3-2.png") center/cover no-repeat;
+}
+body .popular__grid .popular-grid .first3-3 {
+  background: url("../photo/election3-3.png") center/cover no-repeat;
+}
+body .popular__grid .popular-grid .first3-4 {
+  background: url("../photo/election3-4.png") center/cover no-repeat;
+}
+body .popular__grid .popular-grid .first4-1 {
+  background: url("../photo/election4-1.png") center/cover no-repeat;
+}
+body .popular__grid .popular-grid .first4-2 {
+  background: url("../photo/election4-2.png") center/cover no-repeat;
+}
+body .popular__grid .popular-grid .first4-3 {
+  background: url("../photo/election4-3.png") center/cover no-repeat;
+}
+body .popular__grid .popular-grid .first4-4 {
+  background: url("../photo/election4-4.png") center/cover no-repeat;
+}
+body .popular__grid .popular-grid .first5-1 {
+  background: url("../photo/election5-1.png") center/cover no-repeat;
+}
+body .popular__grid .popular-grid .first5-2 {
+  background: url("../photo/election5-2.png") center/cover no-repeat;
+}
+body .popular__grid .popular-grid .first5-3 {
+  background: url("../photo/election5-3.png") center/cover no-repeat;
+}
+body .popular__grid .popular-grid .first5-4 {
+  background: url("../photo/election5-4.png") center/cover no-repeat;
 }
 body .create {
   width: 100%;
