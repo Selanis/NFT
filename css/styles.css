@@ -872,7 +872,6 @@ body .resources {
   height: 100%;
   max-width: 1320px;
   min-height: 671px;
-  border: 1px solid white;
   margin-top: 132px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -984,6 +983,128 @@ body .resources .resources-grid__item2 .container-resources .resources-buttons b
   border-radius: 8px;
   border: none;
   background: linear-gradient(89.62deg, #0500FA 7.09%, #E01E5A 92.23%);
+  line-height: 14px;
+}
+body .resources .resources-grid__item2 .container-resources .resources-buttons p {
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .resources .resources-grid__item2 .container-resources .resources-buttons p img {
+  margin-right: 4px;
+}
+body .resources .resources-grid__item2 .container-resources h1 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 24px;
+}
+body .resources .resources-grid__item2 .container-resources .resources-people {
+  margin-top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .resources .resources-grid__item2 .container-resources .resources-people p {
+  max-width: 113px;
+  font-weight: 500;
+}
+body .resources .resources-grid__item2 .container-resources .resources-people p span {
+  color: #C0C0C0;
+  font-weight: 400;
+}
+body .resources .resources-grid__item2 .container-resources .resources-people img {
+  margin-right: 16px;
+}
+body .resources .nft-token {
+  width: 100%;
+  height: 100%;
+  max-width: 508px;
+  min-height: 152px;
+  background: #1E1B33;
+  margin-left: 32px;
+  margin-top: -153px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 24px;
+  border-radius: 8px;
+}
+body .resources .nft-token .nft-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .resources .nft-token .nft-button button {
+  font-size: 14px;
+  line-height: 14px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 8px;
+  border: none;
+  margin-right: 12px;
+  background: linear-gradient(89.62deg, #0500FA 7.09%, #E01E5A 92.23%);
+}
+body .resources .nft-token .nft-button p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .resources .nft-token .nft-button p img {
+  margin-right: 4px;
+}
+body .resources .nft-token h1 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 24px;
+}
+body .resources .nft-token__person {
+  margin-top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+body .resources .nft-token__person p {
+  font-weight: 500;
+  max-width: 112px;
+  padding-left: 16px;
+}
+body .resources .nft-token__person p span {
+  font-weight: 400;
+  color: #C0C0C0;
 }
 body .popular {
   width: 100%;
