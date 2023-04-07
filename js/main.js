@@ -95,5 +95,5 @@ button30DAYS.onclick = function() {
 // Модальное окно
 var buttonModalWindow = document.getElementById("modal-window");
 buttonModalWindow.onclick = function() {
-    buttonModalWindow.onclick = confirm("Are you sure?");
+    buttonModalWindow = confirm("Are you sure?");
 }
