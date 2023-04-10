@@ -203,7 +203,7 @@ buttonTrand.onclick = function() {
     } else {};
 };
 
-
+// Скроллер
 
 
 

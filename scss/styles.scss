@@ -1248,8 +1248,126 @@ body {
         height: 100%;
         max-width: 1320px;
         min-height: 541px;
-        border: 1px solid white;
+        // border: 1px solid white;
         margin-top: 80px;
+
+        .footer-hr {
+            width: 100%;
+            max-width: 1320px;
+            height: 0px;
+            border: 1px solid rgba(231, 231, 231, 0.24);
+        }
+
+        .footer-grid {
+            width: 100%;
+            max-width: 1320px;
+            height: 100%; 
+            min-height: 266px;
+            margin-top: 100px;
+            display: grid;
+            grid-template-columns: minmax(135px, 316px) minmax(124px, 316px) minmax(118px, 316px) 371px;
+            grid-template-rows: 266px;
+
+            h2 {
+                font-size: 24px;
+                font-weight: 500;
+            }
+
+            ul {
+                margin-top: 20px;
+                list-style: none;
+
+                li {
+                    margin-top: 12px;
+                }
+            }
+
+            &__item4 {
+                p {
+                    margin-top: 32px;
+                }
+
+                form {
+                    width: 100%;
+                    max-width: 371px;
+                    height: 100%;
+                    max-height: 58px;
+                    background-color: #1E1B33;
+                    margin-top: 36px;
+                    border-radius: 8px;
+                    display: flex;
+                    flex-direction: row;
+
+                    .email-input {
+                        max-width: 240px;
+                        border: none;
+                        max-height: 18px;
+                        background-color: #1E1B33;
+                        padding: 20px;
+                        border-radius: 8px 0px 0px 8px;
+                    }
+
+                    .subscribe-button {
+                        padding-top: 20px;
+                        padding-left: 30px;
+                        padding-bottom: 20px;
+                        padding-right: 30px;
+                        border-radius: 0px 8px 8px 0px;
+                        background: linear-gradient(89.62deg, #0500FA 7.09%, #E01E5A 92.23%);
+                        border: none;
+                    }
+                }
+
+                .footer-logos {
+                    margin-top: 40px;
+
+                    img {
+                        margin-right: 8px;
+                    }
+                }
+            }
+        }
+
+        
+    }
+
+    .last-line {
+        width: 100%;
+        height: 100%;
+        min-height: 80px;
+        background-color: #1E1B33;
+        display: flex;
+        justify-content: center;
+
+        .text-line {
+            width: 100%;
+            max-width: 1320px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 100%;
+            min-height: 80px;
+            align-items: center;
+
+            ul {
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+
+                li {
+                    padding-right: 47px;
+                    color: #C0C0C0;
+                    font-size: 20px;
+                }
+
+            }
+
+            p {
+                color: #C0C0C0;
+                font-size: 20px;
+            }
+        }
+        
     }
 
     .blur1 {
