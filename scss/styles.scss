@@ -18,13 +18,17 @@ body {
     align-items: center;
     background-color: #09090A;
     
+    section {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 
     nav {
         width: 100%;
         background-color: #04011C;
         min-height: 84px;
         box-shadow: 0px 20px 40px rgba(205, 28, 104, 0.08);
-        position: fixed;
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -125,7 +129,7 @@ body {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        margin-top: 136px;
+        margin-top: 52px;
         background: url('../photo/bg-rectangle-blue.svg') no-repeat, url('../photo/bg-vector.svg') no-repeat, url('../photo/bg-rectangle-pink.svg') no-repeat, url('../photo/bg-circle1.png') no-repeat, url('../photo/bg-circle2.png') no-repeat;
         background-position: left 10% top 8%, left 58% top 0px, left 28% top 85%, left 42% top 80%, left 52% top 69%;
         position: relative;
@@ -251,7 +255,7 @@ body {
     .button-right {
         position: absolute;
         left: 90%;
-        top: 55%;
+        top: 400px;
         z-index: 1001;
         width: 100px;
         height: 100px;
@@ -376,7 +380,7 @@ body {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            margin-top: 60px;
+            margin-top: 36px;
 
             &__item1 {
                 width: 100%;
@@ -385,6 +389,7 @@ body {
                 min-height: 435px;
                 background: #1E1B33;
                 border-radius: 12px;
+                margin-top: 24px;
 
                 .science {
                     padding: 24px;
@@ -592,6 +597,7 @@ body {
             }
 
             .ethereum {
+                margin-left: 10px;
                 padding-left: 20px;
                 padding-top: 12px;
                 padding-bottom: 12px;
@@ -633,6 +639,7 @@ body {
             grid-template-rows: minmax(101px, 351px);
             z-index: 1;
             overflow-x: hidden;
+            overflow-y: hidden;
 
             .second-sort-page {
                 display: grid;
@@ -1574,5 +1581,61 @@ body {
         position: absolute;
         left: 820px;
         top: 1926px;
+    }
+}
+
+@media (max-width: 1256px) {
+    body {
+        .drops-windows {
+            width: 100%;
+            max-width: 648px !important;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+    }
+}
+
+@media (max-width: 1140px) {
+    body {
+        .resources {
+            .resources-grid {
+                justify-content: center;
+                grid-template-columns: minmax(100px, 660px);
+                grid-template-rows: repeat(4, 216px);
+                row-gap: 32px;
+
+                &__item1 {
+                    grid-row: 3 / 5;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1330px) {
+    body {
+        .collections {
+            .list-pages {
+                .second-sort-page {
+                    grid-template-columns: minmax(300px, 424px);
+                    grid-template-rows: repeat(9, 101px);
+                    justify-content: center;
+                }
+            }
+
+            .see-all {
+                margin-top: 56px;
+            }
+
+            .see-all-shown {
+                margin-top: 500px;
+            }
+        }
+
+        .trending {
+            .trending-grid {
+                
+            }
+        }
     }
 }
