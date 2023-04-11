@@ -868,8 +868,230 @@ body .trending {
   height: 100%;
   max-width: 1320px;
   min-height: 639px;
-  border: 1px solid white;
   margin-top: 132px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .trending .trending-title {
+  width: 100%;
+  height: 100%;
+  max-width: 319px;
+  min-height: 87px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+body .trending .trending-title h1 {
+  background: linear-gradient(89.62deg, #06045B 7.09%, #E01E5A 92.23%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  font-size: 96px;
+  font-weight: 700;
+}
+body .trending .trending-title h2 {
+  font-weight: 500;
+  font-size: 44px;
+  margin-top: -69px;
+}
+body .trending .trending-grid {
+  margin-top: 60px;
+  width: 100%;
+  max-width: 1320px;
+  height: 100%;
+  min-height: 439px;
+  display: grid;
+  grid-template-columns: repeat(10, 312px);
+  grid-template-rows: minmax(439px, 454px);
+  gap: 24px;
+  overflow-x: hidden;
+}
+body .trending .trending-grid .grid-item {
+  background-color: #1E1B33;
+  border: 1px solid rgba(231, 235, 238, 0.4);
+  border-radius: 8px;
+}
+body .trending .trending-grid .grid-item .trend {
+  padding: 24px;
+  width: 100%;
+  max-width: 264px;
+  min-height: 391px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+body .trending .trending-grid .grid-item .trend h3 {
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+body .trending .trending-grid .grid-item .trend h3 img {
+  margin-left: 4px;
+}
+body .trending .trending-grid .grid-item .trend h1 {
+  font-weight: 500;
+  font-size: 24px;
+  margin-top: 8px;
+}
+body .trending .trending-grid .grid-item .trend__item {
+  margin-top: 16px;
+  width: 100%;
+  height: 100%;
+  max-width: 264px;
+  min-height: 70px;
+  border: 0.5px solid rgba(231, 231, 231, 0.4);
+  border-radius: 8px;
+}
+body .trending .trending-grid .grid-item .trend__item .in-trend {
+  padding: 16px;
+  width: 100%;
+  height: 100%;
+  max-width: 229px;
+  min-height: 38px;
+}
+body .trending .trending-grid .grid-item .trend__item .in-trend h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body .trending .trending-grid .grid-item .trend__item .in-trend h4 span {
+  color: #C0C0C0;
+  font-size: 12px;
+}
+body .trending .trending-grid .grid-item .trend__item .in-trend h5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 10px;
+}
+body .trending .trending-grid .grid-item .trend__item .in-trend h5 span {
+  font-size: 14px;
+}
+body .trending .trend-hidden {
+  display: none;
+}
+body .trending .scroll-div {
+  width: 100%;
+  height: 100%;
+  max-width: 780px;
+  min-height: 31px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+}
+body .trending .scroll-div button {
+  width: 100%;
+  height: 100%;
+  max-width: 40px;
+  min-height: 31px;
+  background-color: #03DB80;
+  border: none;
+}
+body .trending .scroll-div .trend-left {
+  background: url("../photo/button-left.svg");
+}
+body .trending .scroll-div .trend-right {
+  background: url("../photo/button-right.svg");
+}
+body .trending .scroll-div .trend-scroll {
+  width: 100%;
+  max-width: 648px;
+  height: 4px;
+  background-color: rgba(231, 231, 231, 0.24);
+}
+body .trending .scroll-div .trend-scroll .visible-scroll {
+  background: linear-gradient(89.62deg, #06045B 7.09%, #E01E5A 92.23%);
+  height: 100%;
+  min-height: 4px;
+  max-width: 648px;
+}
+body .trending .scroll-div .trend-scroll .scroll40 {
+  width: 40%;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+body .trending .scroll-div .trend-scroll .scroll50 {
+  width: 50%;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+body .trending .scroll-div .trend-scroll .scroll60 {
+  width: 60%;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+body .trending .scroll-div .trend-scroll .scroll70 {
+  width: 70%;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+body .trending .scroll-div .trend-scroll .scroll80 {
+  width: 80%;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+body .trending .scroll-div .trend-scroll .scroll90 {
+  width: 90%;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+body .trending .scroll-div .trend-scroll .scroll100 {
+  width: 100%;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
 }
 body .resources {
   width: 100%;

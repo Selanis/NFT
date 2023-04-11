@@ -204,7 +204,35 @@ buttonTrand.onclick = function() {
 };
 
 // Скроллер
+var buttonTrendLeft = document.getElementById("trend-left");
+var buttonTrendRight = document.getElementById("trend-right");
+trend = 0;
+var scrolll = document.getElementById("scroll");
 
+var trendList = document.querySelectorAll(".trending .trending-grid .grid-item");
 
+buttonTrendRight.onclick = function() {
+    if (trend >= 6) {
+    } else {
+        trendList[trend].classList.add("trend-hidden");
+        trend++;
+        scrolll.classList.remove(scrolll.classList[1]);
+        scrolll.classList.add("scroll" + String((trend + 4) * 10));
+    };
+};
+
+buttonTrendLeft.onclick = function() {
+    if (trend < 0) {
+    } else if (trend == 0) {
+        trendList[trend].classList.remove("trend-hidden");
+        scrolll.classList.remove(scrolll.classList[1]);
+        scrolll.classList.add("scroll40");
+    } else {
+        trendList[trend].classList.remove("trend-hidden");
+        trend--;
+        scrolll.classList.remove(scrolll.classList[1]);
+        scrolll.classList.add("scroll" + String((trend + 4) * 10));
+    };
+};
 
 
