@@ -279,60 +279,40 @@ body {
             font-weight: 300;
         }
 
-        &__item1 {
-            max-width: 141px;
+        &__items {
+            max-width: 780px;
+            width: 100%;
             font-size: 20px;
             font-weight: 500;
             text-align: center;
             letter-spacing: -0.014em;
-            span {
-                font-size: 36px;
-                font-weight: 600;
-                background: linear-gradient(89.62deg, #0500FA 7.09%, #E01E5A 92.23%);
-                background-clip: text;
-                color: transparent;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            p {
+                font-size: 20px;
+                font-weight: 500;
+                text-align: center;
+                letter-spacing: -0.014em;
+                max-width: 141px;
+                span {
+                    font-size: 36px;
+                    font-weight: 600;
+                    background: linear-gradient(89.62deg, #0500FA 7.09%, #E01E5A 92.23%);
+                    background-clip: text;
+                    color: transparent;
+                }
             }
-        }
-        &__item2 {
-            max-width: 132px;
-            font-size: 20px;
-            font-weight: 500;
-            text-align: center;
-            letter-spacing: -0.014em;
-            span {
-                font-size: 36px;
-                font-weight: 600;
-                background: #7040F2;
-                background-clip: text;
-                color: transparent;
-            }
-        }
-        &__item3 {
-            max-width: 138px;
-            font-size: 20px;
-            font-weight: 500;
-            text-align: center;
-            letter-spacing: -0.014em;
-            span {
-                font-size: 36px;
-                font-weight: 600;
-                background: #7040F2;
-                background-clip: text;
-                color: transparent;
-            }
-        }
-        &__item4 {
-            max-width: 141px;
-            font-size: 20px;
-            font-weight: 500;
-            text-align: center;
-            letter-spacing: -0.014em;
-            span {
-                font-size: 36px;
-                font-weight: 600;
-                background: #7040F2;
-                background-clip: text;
-                color: transparent;
+            
+            .after-main2 {
+                span {
+                    font-size: 36px;
+                    font-weight: 600;
+                    background: #7040F2;
+                    background-clip: text;
+                    color: transparent;
+                }
             }
         }
     }
@@ -1584,7 +1564,7 @@ body {
     }
 }
 
-@media (max-width: 1256px) {
+@media screen and (max-width: 1256px) {
     body {
         .drops-windows {
             width: 100%;
@@ -1595,7 +1575,7 @@ body {
     }
 }
 
-@media (max-width: 1140px) {
+@media screen and (max-width: 1140px) {
     body {
         .resources {
             .resources-grid {
@@ -1612,7 +1592,7 @@ body {
     }
 }
 
-@media (max-width: 1330px) {
+@media screen and (max-width: 1330px) {
     body {
         .collections {
             .list-pages {
@@ -1636,6 +1616,18 @@ body {
             .trending-grid {
                 
             }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        .after-main-content {
+            max-width: 1050px;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            
         }
     }
 }
