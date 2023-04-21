@@ -494,6 +494,9 @@ body .drops .drops-windows__item1 .science__title {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 24px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 body .drops .drops-windows__item1 .science__title h3 {
   font-size: 24px;
@@ -1773,7 +1776,7 @@ body .last-line .text-line ul {
           flex-direction: row;
 }
 body .last-line .text-line ul li {
-  padding-right: 47px;
+  padding-right: 24px;
   color: #C0C0C0;
   font-size: 20px;
 }
@@ -1795,6 +1798,33 @@ body .blur3 {
   position: absolute;
   left: 820px;
   top: 1926px;
+}
+body .modal {
+  width: 100%;
+  max-width: 50%;
+  min-height: 400px;
+  position: fixed;
+  border-radius: 8px;
+  border: 1px solid pink;
+  top: 25%;
+  left: 25%;
+  z-index: 100000000000;
+  background-color: #7040F2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .modal p {
+  margin: 0 auto;
+}
+body .modal-hide {
+  display: none;
 }
 
 @media screen and (max-width: 1256px) {
@@ -2093,10 +2123,562 @@ body .blur3 {
     max-width: 233px;
     min-height: 309px;
   }
+  body .scroler {
+    max-width: 77px;
+    min-height: 3px;
+  }
+  body .scroler .item1 {
+    width: 31px;
+  }
+  body .scroler .item2 {
+    width: 13px;
+    border-radius: 80px;
+  }
   body .after-main-content {
     margin-top: 70px;
   }
   body .after-main-content .after-main-text {
     font-size: 16px;
+  }
+  body .after-main-content__items {
+    font-size: 14px;
+  }
+  body .after-main-content__items p {
+    font-size: 14px;
+    max-width: 100px;
+  }
+  body .after-main-content__items p span {
+    font-size: 24px;
+  }
+  body .after-main-content__items .after-main2 span {
+    font-size: 24px;
+  }
+  body .resources {
+    margin-top: 75px;
+  }
+  body .resources .nft-resources-title h1 {
+    font-size: 70px;
+  }
+  body .resources .nft-resources-title h2 {
+    font-size: 32px;
+    margin-top: -50px;
+  }
+  body .resources .resources-grid {
+    margin-top: 20px;
+    grid-template-columns: minmax(100px, 440px);
+    grid-template-rows: repeat(4, 144px);
+    row-gap: 15px;
+  }
+  body .resources .resources-grid__item2 {
+    border-radius: 6px;
+  }
+  body .resources .resources-grid__item2 .resources-img {
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+  }
+  body .resources .resources-grid__item2 .container-resources {
+    padding-left: 12px;
+  }
+  body .resources .resources-grid__item2 .container-resources .resources-buttons {
+    margin-top: 15px;
+  }
+  body .resources .resources-grid__item2 .container-resources .resources-buttons button {
+    margin-right: 6px;
+    padding-right: 8px;
+    padding-top: 5px;
+    padding-left: 8px;
+    padding-bottom: 5px;
+    font-size: 8px;
+    border-radius: 6px;
+    line-height: 8px;
+  }
+  body .resources .resources-grid__item2 .container-resources .resources-buttons p {
+    font-size: 10px;
+  }
+  body .resources .resources-grid__item2 .container-resources .resources-buttons p img {
+    margin-right: 2px;
+  }
+  body .resources .resources-grid__item2 .container-resources h1 {
+    font-size: 16px;
+    margin-top: 13px;
+  }
+  body .resources .resources-grid__item2 .container-resources .resources-people {
+    margin-top: 5px;
+  }
+  body .resources .resources-grid__item2 .container-resources .resources-people p {
+    max-width: 95px;
+    font-size: 12px;
+  }
+  body .resources .resources-grid__item2 .container-resources .resources-people p span {
+    font-size: 12px;
+  }
+  body .resources .resources-grid__item2 .container-resources .resources-people img {
+    margin-right: 10px;
+  }
+  body .resources .nft-token {
+    max-width: 254px;
+    min-height: 76px;
+    margin-left: 16px;
+    margin-top: -76px;
+    border-radius: 6px;
+    padding: 12px;
+  }
+  body .resources .nft-token .nft-button button {
+    font-size: 8px;
+    line-height: 8px;
+    padding-right: 8px;
+    padding-top: 5px;
+    padding-left: 8px;
+    padding-bottom: 5px;
+    border-radius: 6px;
+  }
+  body .resources .nft-token .nft-button p {
+    font-size: 10px;
+  }
+  body .resources .nft-token .nft-button p img {
+    margin-right: 2px;
+  }
+  body .resources .nft-token h1 {
+    font-size: 12px;
+    margin-top: 13px;
+  }
+  body .resources .nft-token__person {
+    margin-top: 16px;
+  }
+  body .resources .nft-token__person img {
+    width: 32px;
+    height: 32px;
+  }
+  body .resources .nft-token__person p {
+    font-size: 10px;
+    padding-left: 12px;
+    max-width: 75px;
+  }
+  body .resources .nft-token__person p span {
+    font-size: 10px;
+  }
+  body .trending {
+    margin-top: 70px;
+  }
+  body .trending .trending-title h1 {
+    font-size: 70px;
+  }
+  body .trending .trending-title h2 {
+    font-size: 32px;
+    margin-top: -50px;
+  }
+  body .collections {
+    margin-top: 75px;
+  }
+  body .collections__title .logo-sort .nft-collections-title h1 {
+    font-size: 70px;
+  }
+  body .collections__title .logo-sort .nft-collections-title h2 {
+    font-size: 32px;
+    margin-top: -50px;
+  }
+  body .drops {
+    margin-top: 55px;
+  }
+  body .drops h1 {
+    font-size: 70px;
+  }
+  body .drops h2 {
+    font-size: 32px;
+    margin-top: -50px;
+  }
+  body .drops .drops-windows {
+    max-width: 430px !important;
+    margin-top: 10px;
+  }
+  body .drops .drops-windows__item1 {
+    max-width: 208px;
+    min-height: 290px;
+    margin-top: 15px;
+  }
+  body .drops .drops-windows__item1 .science {
+    padding: 16px;
+    max-width: 176px;
+    min-height: 258px;
+  }
+  body .drops .drops-windows__item1 .science__photo1 {
+    min-height: 154px;
+  }
+  body .drops .drops-windows__item1 .science__photo2 {
+    min-height: 154px;
+  }
+  body .drops .drops-windows__item1 .science__photo3 {
+    min-height: 154px;
+  }
+  body .drops .drops-windows__item1 .science__photo4 {
+    min-height: 154px;
+  }
+  body .drops .drops-windows__item1 .science__title {
+    margin-top: 10px;
+  }
+  body .drops .drops-windows__item1 .science__title h3 {
+    font-size: 16px;
+  }
+  body .drops .drops-windows__item1 .science__title .science-likes {
+    height: 12px;
+  }
+  body .drops .drops-windows__item1 .science__title .science-likes p {
+    font-size: 12px;
+  }
+  body .drops .drops-windows__item1 .science__people {
+    margin-top: 10px;
+  }
+  body .drops .drops-windows__item1 .science__people .people1 p {
+    font-size: 8px;
+  }
+  body .drops .drops-windows__item1 .science__people .people-2 {
+    max-width: 40px;
+    margin-left: -6px;
+  }
+  body .drops .drops-windows__item1 .science__people .people-2 img {
+    margin-left: -8px;
+  }
+  body .drops .drops-windows__item1 .science button {
+    min-height: 25px;
+    font-size: 12px;
+    border-radius: 6px;
+    margin-top: 13px;
+  }
+  body * {
+    font-size: 12px;
+  }
+  body .last-line {
+    min-height: 40px !important;
+  }
+  body .last-line .text-line {
+    min-height: 40px !important;
+  }
+  body .last-line .text-line ul li {
+    font-size: 10px;
+  }
+  body .last-line .text-line p {
+    font-size: 10px;
+  }
+  body footer {
+    min-height: 350px;
+    margin-top: 50px;
+  }
+  body footer .footer-grid {
+    margin-top: 50px;
+  }
+  body .brands {
+    max-width: 250px;
+    margin-top: 50px;
+  }
+  body .brands div {
+    margin-top: 10px;
+  }
+  body .brands__logo1 {
+    width: 50px;
+    height: 34px;
+    background-size: 50px 34px;
+  }
+  body .brands__logo2 {
+    width: 104px;
+    height: 30px;
+    background-size: 104px 30px;
+  }
+  body .brands__logo3 {
+    width: 100px;
+    height: 34px;
+    background-size: 100px 34px;
+  }
+  body .brands__logo4 {
+    width: 100px;
+    height: 34px;
+    background-size: 100px 34px;
+  }
+  body .brands__logo5 {
+    width: 87px;
+    height: 28px;
+    background-size: 87px 28px;
+  }
+  body .create {
+    margin-top: 50px;
+    min-height: 175px;
+  }
+  body .create__img {
+    max-width: 155px;
+    min-height: 162px;
+  }
+  body .create__text {
+    padding-right: 25px;
+  }
+  body .create__text h1 {
+    font-size: 19px;
+    line-height: 21px;
+  }
+  body .create__text p {
+    font-size: 10px;
+    margin-top: 10px;
+  }
+  body .create__text button {
+    margin-top: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    border-radius: 6px;
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 500px) {
+  body .after-main-content {
+    margin-top: 25px;
+  }
+  body .after-main-content .after-main-text {
+    font-size: 12px;
+    max-width: 300px;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body .after-main-content__items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 275px;
+  }
+  body .hr1 {
+    max-width: 300px;
+    margin-top: 20px;
+  }
+  body footer .footer-hr {
+    max-width: 300px;
+  }
+  body header {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body header .main-text-content {
+    padding-left: 10px;
+  }
+  body header .main-text-content h1 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  body header .main-text-content h1 span {
+    font-size: 20px;
+  }
+  body header .main-text-content p {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  body header .main-pict-content {
+    max-width: 300px;
+    margin-top: 10px;
+  }
+  body header .main-pict-content .div-images .shown {
+    max-width: 300px;
+    min-height: 400px;
+  }
+  body .button-right {
+    left: 35%;
+    top: 640px;
+  }
+  body .drops {
+    margin-top: 10px;
+  }
+  body .drops h1 {
+    font-size: 40px;
+  }
+  body .drops h2 {
+    font-size: 22px;
+    margin-top: -35px;
+  }
+  body .drops .drops-windows {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .collections {
+    margin-top: 25px;
+  }
+  body .collections__title {
+    min-height: 50px;
+  }
+  body .collections__title .logo-sort .nft-collections-title {
+    min-height: 50px;
+  }
+  body .collections__title .logo-sort .nft-collections-title h1 {
+    font-size: 40px;
+  }
+  body .collections__title .logo-sort .nft-collections-title h2 {
+    font-size: 22px;
+    margin-top: -35px;
+  }
+  body .trending {
+    margin-top: 30px;
+  }
+  body .trending .trending-title {
+    min-height: 50px;
+  }
+  body .trending .trending-title h1 {
+    font-size: 40px;
+  }
+  body .trending .trending-title h2 {
+    font-size: 22px;
+    margin-top: -35px;
+  }
+  body .resources {
+    margin-top: 30px;
+  }
+  body .resources .nft-resources-title {
+    min-height: 50px;
+  }
+  body .resources .nft-resources-title h1 {
+    font-size: 40px;
+  }
+  body .resources .nft-resources-title h2 {
+    font-size: 22px;
+    margin-top: -35px;
+  }
+  body .popular {
+    margin-top: 30px;
+  }
+  body .popular__title .popular-h1 h1 {
+    font-size: 40px;
+  }
+  body .popular__title .popular-h1 h2 {
+    font-size: 22px;
+    margin-top: -35px;
+  }
+  body .popular__title .popular-buttons {
+    max-width: 200px;
+  }
+  body .popular__title .popular-buttons button {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  body .popular .popular__grid {
+    grid-template-columns: repeat(2, minmax(10px, 312px));
+    grid-template-rows: repeat(2, 453px);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 10px;
+  }
+  body * {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 435px) {
+  body .collections .list-pages {
+    max-width: 960px;
+  }
+  body .collections .list-pages .second-sort-page {
+    grid-template-columns: minmax(300px, 310px);
+    grid-template-rows: repeat(9, 72px);
+    min-height: 180px;
+  }
+  body .collections .list-pages .second-sort-page .grid-sec {
+    min-height: 62px;
+    border-radius: 10px;
+  }
+  body .collections .list-pages .second-sort-page .grid-sec .grid-sect {
+    margin-top: 10px;
+    padding-bottom: 10px;
+  }
+  body .collections .list-pages .second-sort-page .grid-sec .grid-sect .grid-text1 {
+    padding-left: 6px;
+    max-width: 220px;
+  }
+  body .collections .list-pages .second-sort-page .grid-sec .grid-sect .grid-text1 .grid-text2 {
+    padding-top: 20px;
+  }
+  body .collections .list-pages .second-sort-page .grid-sec .grid-sect .grid-text1 div h2 {
+    font-size: 12px;
+  }
+  body .collections .list-pages .second-sort-page .grid-sec .grid-sect .grid-text1 div h3 {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 1330px) {
+  body .trending .trending-grid {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    grid-template-columns: repeat(2, 312px);
+    grid-template-rows: repeat(2, minmax(439px, 454px));
+  }
+}
+@media screen and (max-width: 670px) {
+  body .trending .trending-grid {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    grid-template-columns: repeat(2, 156px);
+    grid-template-rows: repeat(2, minmax(219px, 240px));
+    margin-top: 25px;
+    gap: 10px;
+  }
+  body .trending .trending-grid .grid-item {
+    border-radius: 6px;
+  }
+  body .trending .trending-grid .grid-item .trend {
+    padding: 12px;
+    max-width: 132px;
+    min-height: 195px;
+  }
+  body .trending .trending-grid .grid-item .trend .trend-img {
+    max-width: 132px;
+    min-height: 116px;
+  }
+  body .trending .trending-grid .grid-item .trend h3 {
+    font-size: 10px;
+    margin-top: 5px;
+    min-height: 20px !important;
+  }
+  body .trending .trending-grid .grid-item .trend h3 img {
+    margin-left: 2px;
+    width: 10px;
+    height: 10px !important;
+  }
+  body .trending .trending-grid .grid-item .trend h1 {
+    font-size: 12px;
+    margin-top: 4px;
+  }
+  body .trending .trending-grid .grid-item .trend__item {
+    margin-top: 8px;
+    max-width: 132px;
+    min-height: 35px;
+    border-radius: 6px;
+  }
+  body .trending .trending-grid .grid-item .trend__item .in-trend {
+    padding: 4px;
+    max-width: 118px;
+    min-height: 19px;
+  }
+  body .trending .trending-grid .grid-item .trend__item .in-trend h4 span {
+    font-size: 10px;
+  }
+  body .trending .trending-grid .grid-item .trend__item .in-trend h5 {
+    margin-top: 5px;
+  }
+  body .trending .trending-grid .grid-item .trend__item .in-trend h5 span {
+    font-size: 10px;
+  }
+  body .trending .scroll-div {
+    max-width: 250px;
+  }
+  body .trending .scroll-div .trend-left {
+    background: url("../photo/button-left.svg");
+    margin-right: 10px;
+  }
+  body .trending .scroll-div .trend-right {
+    background: url("../photo/button-right.svg");
+    margin-left: 10px;
   }
 }

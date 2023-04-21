@@ -94,9 +94,18 @@ button30DAYS.onclick = function() {
 
 // Модальное окно
 var buttonModalWindow = document.getElementById("modal-window");
+var modalWindow = document.getElementById("modal");
+var buttonOver = document.getElementById("modal2");
 buttonModalWindow.onclick = function() {
-    buttonModalWindow = confirm("Are you sure?");
-}
+    modalWindow.classList.remove ("modal-hide");
+    modalWindow.classList.add('modal');
+};
+buttonOver.onclick = function() {
+    modalWindow.classList.add ("modal-hide");
+    modalWindow.classList.remove('modal');
+};
+
+
 
 // Сортировка
 var buttonPopular = document.querySelectorAll(".popular .popular-buttons button");
@@ -215,6 +224,7 @@ buttonTrendRight.onclick = function() {
     if (trend >= 6) {
     } else {
         trendList[trend].classList.add("trend-hidden");
+        trendList[trend + 4].classList.remove("trend-hidden");
         trend++;
         scrolll.classList.remove(scrolll.classList[1]);
         scrolll.classList.add("scroll" + String((trend + 4) * 10));
@@ -225,14 +235,17 @@ buttonTrendLeft.onclick = function() {
     if (trend < 0) {
     } else if (trend == 0) {
         trendList[trend].classList.remove("trend-hidden");
+        trendList[4].classList.add("trend-hidden");
         scrolll.classList.remove(scrolll.classList[1]);
         scrolll.classList.add("scroll40");
     } else {
-        trendList[trend].classList.remove("trend-hidden");
+        trendList[trend - 1].classList.remove("trend-hidden");
+        trendList[trend + 3].classList.add("trend-hidden");
         trend--;
         scrolll.classList.remove(scrolll.classList[1]);
         scrolll.classList.add("scroll" + String((trend + 4) * 10));
     };
 };
+
 
 

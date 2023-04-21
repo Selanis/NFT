@@ -416,6 +416,7 @@ body {
                         flex-direction: row;
                         justify-content: space-between;
                         margin-top: 24px;
+                        align-items: center;
 
                         h3 {
                             font-size: 24px;
@@ -1537,7 +1538,7 @@ body {
                 flex-direction: row;
 
                 li {
-                    padding-right: 47px;
+                    padding-right: 24px;
                     color: #C0C0C0;
                     font-size: 20px;
                 }
@@ -1568,6 +1569,30 @@ body {
         position: absolute;
         left: 820px;
         top: 1926px;
+    }
+    
+    .modal {
+        width: 100%;
+        max-width: 50%;
+        min-height: 400px;
+        position: fixed;
+        border-radius: 8px;
+        border: 1px solid pink;
+        top: 25%;
+        left: 25%;
+        z-index: 100000000000;
+        background-color: #7040F2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        p {
+            margin: 0 auto;
+        }
+    }
+    
+    .modal-hide {
+        display: none;
     }
 }
 
@@ -1971,13 +1996,665 @@ body {
             }
         }
 
-        .scroller {}
+        .scroler {
+            max-width: 77px;
+            min-height: 3px;
+            .item1 {
+                width: 31px;
+            }
+            .item2 {
+                width: 13px;
+                border-radius: 80px;
+            }
+        }
 
         .after-main-content {
             margin-top: 70px;
 
             .after-main-text {
                 font-size: 16px;
+            }
+
+            &__items {
+                font-size: 14px;
+
+                p {
+                    font-size: 14px;
+                    max-width: 100px;
+
+                    span {
+                        font-size: 24px;
+                    }
+                }
+
+                .after-main2 {
+                    span {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+
+        .resources {
+            margin-top: 75px;
+            .nft-resources-title {
+                h1 {
+                    font-size: 70px;
+                }
+
+                h2 {
+                    font-size: 32px;
+                    margin-top: -50px;
+                }
+            }
+
+            .resources-grid {
+                margin-top: 20px;
+                grid-template-columns: minmax(100px, 440px);
+                grid-template-rows: repeat(4, 144px);
+                row-gap: 15px;
+
+                &__item2 {
+                    border-radius: 6px;
+                    .resources-img {
+                        padding-top: 15px;
+                        padding-left: 15px;
+                        padding-bottom: 15px;
+                    }
+
+                    .container-resources {
+                        padding-left: 12px;
+                        .resources-buttons {
+                            margin-top: 15px;
+                            button {
+                                margin-right: 6px;
+                                padding-right: 8px;
+                                padding-top: 5px;
+                                padding-left: 8px;
+                                padding-bottom: 5px;
+                                font-size: 8px;
+                                border-radius: 6px;
+                                line-height: 8px;
+                            }
+
+                            p {
+                                font-size: 10px;
+                                img {
+                                    margin-right: 2px;
+                                }
+                            }
+                        }
+                        h1 {
+                            font-size: 16px;
+                            margin-top: 13px;
+                        }
+                        .resources-people {
+                            margin-top: 5px;
+                            p {
+                                max-width: 95px;
+                                font-size: 12px;
+                                span {
+                                    font-size: 12px;
+                                }
+                            }
+                            img {
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .nft-token {
+                max-width: 254px;
+                min-height: 76px;
+                margin-left: 16px;
+                margin-top: -76px;
+                border-radius: 6px;
+                padding: 12px;
+
+                .nft-button {
+                    button {
+                        font-size: 8px;
+                        line-height: 8px;
+                        padding-right: 8px;
+                        padding-top: 5px;
+                        padding-left: 8px;
+                        padding-bottom: 5px;
+                        border-radius: 6px;
+                    }
+
+                    p {
+                        font-size: 10px;
+                        img {
+                            margin-right: 2px;
+                        }
+                    }
+                }
+                h1 {
+                    font-size: 12px;
+                    margin-top: 13px;
+                }
+
+                &__person {
+                    margin-top: 16px;
+                    img {
+                        width: 32px;
+                        height: 32px;
+                    }
+                    p {
+                        font-size: 10px;
+                        padding-left: 12px;
+                        max-width: 75px;
+                        span {
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .trending {
+            margin-top: 70px;
+            .trending-title {
+                h1 {
+                    font-size: 70px;
+                }
+
+                h2 {
+                    font-size: 32px;
+                    margin-top: -50px;
+                }
+            }
+        }
+
+        .collections {
+            margin-top: 75px;
+            &__title {
+                .logo-sort {
+                    .nft-collections-title {
+                        h1 {
+                            font-size: 70px;
+                        }
+        
+                        h2 {
+                            font-size: 32px;
+                            margin-top: -50px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .drops {
+            margin-top: 55px;
+            h1 {
+                font-size: 70px;
+            }
+
+            h2 {
+                font-size: 32px;
+                margin-top: -50px;
+            }
+
+            .drops-windows {
+                max-width: 430px !important;
+                margin-top: 10px;
+
+                &__item1 {
+                    max-width: 208px;
+                    min-height: 290px;
+                    margin-top: 15px;
+                    .science {
+                        padding: 16px;
+                        max-width: 176px;
+                        min-height: 258px;
+
+                        &__photo1 {
+                            min-height: 154px;
+                        }
+                        &__photo2 {
+                            min-height: 154px;
+                        }
+                        &__photo3 {
+                            min-height: 154px;
+                        }
+                        &__photo4 {
+                            min-height: 154px;
+                        }
+
+                        &__title {
+                            margin-top: 10px;
+                            h3 {
+                                font-size: 16px;
+                            }
+
+                            .science-likes {
+                                height: 12px;
+                                p {
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+
+                        &__people {
+                            margin-top: 10px;
+                            .people1 {
+                                p {
+                                    font-size: 8px;
+                                }
+                            }
+                            .people-2 {
+                                max-width: 40px;
+                                margin-left: -6px;
+                                img {
+                                    margin-left: -8px;
+                                }
+                            }
+                        }
+                        button {
+                            min-height: 25px;
+                            font-size: 12px;
+                            border-radius: 6px;
+                            margin-top: 13px;
+                        }
+                    }
+                }
+            }
+        }
+
+        * {
+            font-size: 12px;
+        }
+        
+        .last-line {
+            min-height: 40px !important;
+            .text-line {
+                min-height: 40px !important;
+                ul {
+                    li {
+                        font-size: 10px;
+                    }
+                }
+
+                p {
+                    font-size: 10px;
+                }
+            }
+        }
+
+        footer {
+            min-height: 350px;
+            margin-top: 50px;
+            .footer-grid {
+                margin-top: 50px;
+            }
+        }
+
+        .brands {
+            max-width: 250px;
+            margin-top: 50px;
+            div {
+                margin-top: 10px;
+            }
+            &__logo1 {
+                width: 50px;
+                height: 34px;
+                background-size: 50px 34px;
+            }
+            &__logo2 {
+                width: 104px;
+                height: 30px;
+                background-size: 104px 30px;
+            }
+            &__logo3 {
+                width: 100px;
+                height: 34px;
+                background-size: 100px 34px;
+            }
+            &__logo4 {
+                width: 100px;
+                height: 34px;
+                background-size: 100px 34px;
+            }
+            &__logo5 {
+                width: 87px;
+                height: 28px;
+                background-size: 87px 28px;
+            }
+        }
+
+        .create {
+            margin-top: 50px;
+            min-height: 175px;
+            &__img {
+                max-width: 155px;
+                min-height: 162px;
+            }
+            &__text {
+                padding-right: 25px;
+                h1 {
+                    font-size: 19px;
+                    line-height: 21px;
+                }
+
+                p {
+                    font-size: 10px;
+                    margin-top: 10px;
+                }
+
+                button {
+                    margin-top: 16px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    padding-bottom: 6px;
+                    padding-top: 6px;
+                    border-radius: 6px;
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        .after-main-content {
+            margin-top: 25px;
+            .after-main-text {
+                font-size: 12px;
+                max-width: 300px;
+                align-content: center;
+                display: flex;
+            }
+
+            &__items {
+                flex-wrap: wrap;
+                max-width: 275px;
+            }
+        }
+
+        .hr1 {
+            max-width: 300px;
+            margin-top: 20px;
+        }
+    
+        footer {
+            .footer-hr {
+                max-width: 300px;
+            }
+        }
+    
+        header {
+            flex-wrap: wrap;
+            justify-content: center;
+            .main-text-content {
+                padding-left: 10px;
+                h1 {
+                    font-size: 20px;
+                    line-height: 20px;
+    
+                    span {
+                        font-size: 20px;
+                    }
+                }
+    
+                p {
+                    margin-top: 10px;
+                    font-size: 12px;
+                }
+    
+            }
+    
+            .main-pict-content {
+                max-width: 300px;
+                margin-top: 10px;
+                .div-images {
+                    .shown {
+                        max-width: 300px;
+                        min-height: 400px;
+                    }
+                }
+            }
+        }
+    
+        .button-right {
+            left: 35%;
+            top: 640px;
+        }
+    
+        .drops {
+            margin-top: 10px;
+            h1 {
+                font-size: 40px;
+            }
+            h2 {
+                font-size: 22px;
+                margin-top: -35px;
+            }
+
+            .drops-windows {
+                justify-content: center;
+            }
+        }
+
+        .collections {
+            margin-top: 25px;
+            &__title {
+                min-height: 50px;
+                .logo-sort {
+                    .nft-collections-title {
+                        min-height: 50px;
+                        h1 {
+                            font-size: 40px;
+                        }
+                        h2 {
+                            font-size: 22px;
+                            margin-top: -35px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .trending {
+            margin-top: 30px;
+            .trending-title {
+                min-height: 50px;
+                h1 {
+                    font-size: 40px;
+                }
+                h2 {
+                    font-size: 22px;
+                    margin-top: -35px;
+                }
+            }
+        }
+
+        .resources {
+            margin-top: 30px;
+            .nft-resources-title {
+                min-height: 50px;
+                h1 {
+                    font-size: 40px;
+                }
+                h2 {
+                    font-size: 22px;
+                    margin-top: -35px;
+                }
+            }
+        }
+
+        .popular {
+            margin-top: 30px;
+            &__title {
+                .popular-h1 {
+                    h1 {
+                        font-size: 40px;
+                    }
+                    h2 {
+                        font-size: 22px;
+                        margin-top: -35px;
+                    }
+                }
+
+                .popular-buttons {
+                    max-width: 200px;
+                    button {
+                        padding-top: 8px;
+                        padding-bottom: 8px;
+                        padding-right: 10px;
+                        padding-left: 10px;
+                    }
+                }
+            }
+            .popular {
+                &__grid {
+                    grid-template-columns: repeat(2, minmax(10px, 312px));
+                    grid-template-rows: repeat(2, 453px);
+                    justify-content: center;
+                    gap: 10px;
+                }
+            }
+        }
+
+        * {
+            font-size: 12px;
+        }
+    }
+}
+
+@media screen and (max-width: 435px) {
+    body {
+        .collections {
+            .list-pages {
+                max-width: 960px;
+                .second-sort-page {
+                    grid-template-columns: minmax(300px, 310px);
+                    grid-template-rows: repeat(9, 72px);
+                    min-height: 180px;
+
+                    .grid-sec {
+                        min-height: 62px;
+                        border-radius: 10px;
+                        .grid-sect {
+                            margin-top: 10px;
+                            padding-bottom: 10px;
+
+                            .grid-text1 {
+                                padding-left: 6px;
+                                max-width: 220px;
+
+                                .grid-text2 {
+                                    padding-top: 20px;
+                                }
+    
+                                div {
+                                    h2 {
+                                        font-size: 12px;
+                                    }
+                                    h3 {
+                                        font-size: 8px;
+                                    }
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1330px) {
+    body {
+        .trending {
+            .trending-grid {
+                justify-content: center;
+                grid-template-columns: repeat(2, 312px);
+                grid-template-rows: repeat(2, minmax(439px, 454px));
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 670px) {
+    body {
+        .trending {
+            .trending-grid {
+                justify-content: center;
+                grid-template-columns: repeat(2, 156px);
+                grid-template-rows: repeat(2, minmax(219px, 240px));
+                margin-top: 25px;
+                gap: 10px;
+
+                .grid-item {
+                    border-radius: 6px;
+                    .trend {
+                        padding: 12px;
+                        max-width: 132px;
+                        min-height: 195px;
+
+                        .trend-img {
+                            max-width: 132px;
+                            min-height: 116px;
+                        }
+
+                        h3 {
+                            font-size: 10px;
+                            margin-top: 5px;
+                            min-height: 20px !important;
+                            img {
+                                margin-left: 2px;
+                                width: 10px;
+                                height: 10px !important;
+                            }
+                        }
+                        h1 {
+                            font-size: 12px;
+                            margin-top: 4px;
+                        }
+                        &__item {
+                            margin-top: 8px;
+                            max-width: 132px;
+                            min-height: 35px;
+                            border-radius: 6px;
+
+                            .in-trend {
+                                padding: 4px;
+                                max-width: 118px;
+                                min-height: 19px;
+
+                                h4 {
+                                    span {
+                                        font-size: 10px;
+                                    }
+                                }
+                                h5 {
+                                    margin-top: 5px;
+                                    span {
+                                        font-size: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .scroll-div {
+                max-width: 250px;
+                
+                .trend-left {
+                    background: url("../photo/button-left.svg");
+                    margin-right: 10px;
+                }
+    
+                .trend-right {
+                    background: url("../photo/button-right.svg");
+                    margin-left: 10px;
+                }
             }
         }
     }
