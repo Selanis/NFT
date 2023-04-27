@@ -114,9 +114,30 @@ body {
         }
 
         .burger-menu {
-            width: 44px;
+            width: 100%;
+            max-width: 75px;
             height: 44px;
             opacity: 0%;
+
+            .ul {
+                list-style: none;
+                min-height: 100px;
+                max-width: 75px;
+                background-color: #0B0A0B;
+                padding: 15px;
+                display: block;
+                transition: max-height 1s;
+                
+                li {
+                    margin-top: 15px;
+                    font-size: 14px;
+                }
+            }
+
+            .ul-hide {
+                display: none;
+                transition: max-height 1s;
+            }
         }
     }
 
@@ -1573,18 +1594,30 @@ body {
     
     .modal {
         width: 100%;
-        max-width: 50%;
-        min-height: 400px;
+        max-width: 872px;
+        min-height: 462px;
         position: fixed;
         border-radius: 8px;
-        border: 1px solid pink;
-        top: 25%;
-        left: 25%;
+        border: 4px solid #D81D60;
+        top: 7%;
+        left: 7%;
         z-index: 100000000000;
-        background-color: #7040F2;
+        background-color: 
+        #0B0A0B;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 58px;
+
+        .modal-pict {
+            width: 466px;
+            height: 466px;
+        }
+
+        .x {
+            width: 49px !important;
+            height: 52px !important;
+        }
     
         p {
             margin: 0 auto;
@@ -1888,7 +1921,7 @@ body {
 
             .burger-menu {
                 opacity: 1;
-                padding-right: 44px;
+                padding-right: 24px;
             }
         }
 
@@ -2655,6 +2688,72 @@ body {
                     background: url("../photo/button-right.svg");
                     margin-left: 10px;
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1090px) {
+    body {
+        .modal {
+            max-width: 580px;
+            min-height: 308px;
+            border-radius: 8px;
+            border: 3px solid #D81D60;
+            padding: 38px;
+    
+            .modal-pict {
+                width: 310px;
+                height: 310px;
+            }
+    
+            .x {
+                width: 32px !important;
+                height: 34px !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 730px) {
+    body {
+        .modal {
+            max-width: 436px;
+            min-height: 231px;
+            border-radius: 8px;
+            border: 2px solid #D81D60;
+            padding: 29px;
+    
+            .modal-pict {
+                width: 233px !important;
+                height: 233px !important;
+            }
+    
+            .x {
+                width: 25px !important;
+                height: 26px !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    body {
+        .modal {
+            max-width: 218px;
+            min-height: 115px;
+            border-radius: 8px;
+            border: 1px solid #D81D60;
+            padding: 14px;
+    
+            .modal-pict {
+                width: 116px !important;
+                height: 116px !important;
+            }
+    
+            .x {
+                width: 12px !important;
+                height: 13px !important;
             }
         }
     }

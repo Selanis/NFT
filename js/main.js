@@ -247,5 +247,15 @@ buttonTrendLeft.onclick = function() {
     };
 };
 
+// Бургер меню
+var buttonBurger = document.querySelector(".burger-menu img");
+var burgerList = document.querySelector(".burger-menu ul");
 
+buttonBurger.onclick = function() {
+    if (burgerList.className == "ul") {
+        burgerList.className = "ul-hide";
+    } else {
+        burgerList.className = "ul"; 
+    }
+}
 
